@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event :loadstart</title><!--quando os dados do video começam a ser carregados-->
+    <style>
+        video{
+           width:  80vw;
+        }
+    </style>
+</head>
+<body>
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+    controls
+    ondurationchange="debug(event)"
+    onloadeddata="debug(event)"
+    onloadeddata="debug(event)"
+    oncanplay="debug(event)"
+    onloadstart="debug(event)">
+    
+   
+  
+    onloadeddata="debug(event)>
+    
+    
+    </video>
+
+    <script>
+        funcion debug(e) { 
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+</body>
+</html>

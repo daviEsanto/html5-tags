@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event :ratechange</title><!--mudança de taxa de reprodução acelerada -->
+    <style>
+        video{
+           width:  80vw;
+        }
+    </style>
+</head>
+<body>
+
+    <select onchange="setRate(event)">
+        <option value=>0.25</option>
+        <option value=>0.50</option>
+        <option value=>0.75</option>
+        <option selected>1</option>
+        <option value=>1.25</option>
+        <option value=>1.50</option>
+        <option value=>1.75</option>
+        <option value=>2</option>
+        <option value=>3</option>
+        <option value=>4</option>
+        
+    </select>
+
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+    controls
+    ondurationchange="debug(event)"
+    onloadeddata="debug(event)"
+    onloadeddata="debug(event)"
+    oncanplay="debug(event)"
+    onloadstart="debug(event)"
+    onpause="debug(event)"
+    onplay="debug(event)">
+
+    
+   
+  
+    onloadeddata="debug(event)>
+    
+    
+    </video>
+
+    <script>
+        function debug(e) { 
+            console.log('Evento: ' + e.type);
+        }
+        function setRate(e){
+
+            const videoEl = document.querySelector('video');
+            const value = e.target.value;
+
+            videoEl.playbackRate = parrseFloat(value);
+            
+        }
+
+    </script>
+</body>
+</html>

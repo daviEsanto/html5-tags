@@ -1,3 +1,3 @@
-TReinando edição de repositorios
+Treinando edição de repositorios
 
 modificação 

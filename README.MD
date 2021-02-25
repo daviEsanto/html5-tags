@@ -1,1 +1,1 @@
-Tags html5 , como utilizar e dicas para a utilização correta
+Todas as Tags são exemplos reais da utilização e descrição de como usar.
